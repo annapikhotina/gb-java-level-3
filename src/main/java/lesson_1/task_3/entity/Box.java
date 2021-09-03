@@ -25,7 +25,7 @@ public class Box <T extends Fruit> {
     return Float.compare(getWeight(), box.getWeight()) == 0;
   }
 
-  public void moveTo(Box<T> box) {
+  public void moveTo(Box<? super T> box) {
     if(box != this) {
       box.getFruits().addAll(fruits);
       fruits.clear();
