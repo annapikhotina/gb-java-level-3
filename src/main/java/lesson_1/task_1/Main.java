@@ -20,9 +20,9 @@ public class Main {
 
   }
 
-  private static <T> void swapArrayElements(T[] array, int x, int y) {
+  private static void swapArrayElements(Object[] array, int x, int y) {
     if (x > 0 && y > 0 && x <= array.length && y <= array.length) {
-      T temp = array[x - 1];
+      Object temp = array[x - 1];
       array[x - 1] = array[y - 1];
       array[y - 1] = temp;
     } else {
